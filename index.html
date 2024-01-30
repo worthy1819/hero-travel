@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,9 @@
     <title>Hero Travel</title>
     <style>
         @media (max-width: 800px){
+            body{
+                background-color: white;
+            }
             #nav1{
                 display: none;
             }
@@ -20,7 +23,7 @@
             #opt-text{
                 width: 90%;
                 position: absolute;
-                top: 150%;
+                top: 170%;
                 padding: 20px;
             }
             #opt-img{
@@ -32,7 +35,7 @@
                 display: flex;
                 flex-direction: column;
                 position: absolute;
-                top: 210%;
+                top: 230%;
             }
             #cyd-card{
                 position: absolute;
@@ -74,12 +77,42 @@
                 width: 90%;
                 top: 2650px;
             }
+            #wcu{
+                position: absolute;
+                width: 90%;
+                top: 5650px;
+            }
+            #dd{
+                position: absolute;
+                width: 90%;
+                top: 6850px;
+            }
+            #video{
+                position: absolute;
+                width: 90%;
+                top: 8450px;
+            }
+            #video-2{
+                position: absolute;
+                width: 90%;
+                top: 450px;
+            }
+            #form{
+                position: absolute;
+                width: 90%;
+                top: 9350px;
+            }
+            footer{
+                position: absolute;
+                width: 90%;
+                top: 10250px;
+            }
         }
     </style>
 </head>
 <body class="bg-white text-black">
     <!-- navbar -->
-    <div class="container p-4">
+    <div class="container p-4 max-w-6xl">
         <nav class="flex justify-between" id="nav1">
             <div class="">
                 <a href="#" class="text-3xl hover:bg-blue-50 rounded-md"><i class="fa-solid fa-earth-asia text-blue-600"></i> Hero <span class="text-blue-600">Travel</span></a>
@@ -109,13 +142,13 @@
         </nav>
     </div>
     <!-- hero  -->
-    <div class="hero min-h-screen" style="background-image: url(bg.jpg);" id="hero">
+    <div class="hero min-h-screen max-w-6xl" style="background-image: url(bg.jpg);" id="hero">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center text-neutral-content">
             <div class="text-white">
                 <h1 class="mb-5 text-5xl font-bold">Explore Your Travel</h1>
                 <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                <div class="flex space-x-4 bg-gray-400 p-3">
+                <div class="flex space-x-4 lg:bg-gray-400 p-3  lg:flex lg:flex-row flex-col space-y-6 lg:space-y-0 justify-center items-center rounded-xl">
                     <input type="text" placeholder="Where Go" class="input input-bordered text-black bg-white w-full max-w-xs" />
                     <select class="select w-full bg-white text-black max-w-xs">
                         <option disabled selected>When</option>
@@ -137,20 +170,20 @@
         </div>
     </div>
     <!-- our popular tours -->
-    <div class="container p-9">
+    <div class="container p-9 max-w-6xl">
         <div class="row flex">
-            <div class="col w-1/2" id="opt-text">
+            <div class="col w-1/2 p-10" id="opt-text">
                 <h1 class="font-semibold text-5xl pb-9">Our Popular Tours</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae doloribus tenetur pariatur nemo praesentium. Magni sequi, sint voluptatem praesentium omnis distinctio. Sapiente, officia inventore reiciendis consectetur ullam molestias temporibus. Consequuntur veniam pariatur vero repellendus, accusantium facilis natus. Itaque voluptatibus alias modi facilis sapiente ex, esse rerum doloribus ipsa fugiat molestias nesciunt reprehenderit delectus adipisci dolorem hic expedita corporis vero, qui, fuga voluptas exercitationem recusandae sint dolore. Fuga, impedit accusamus maiores possimus corporis at explicabo vel blanditiis similique. Beatae animi minus quos, deserunt quas.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae doloribus tenetur pariatur nemo praesentium. Magni sequi, sint voluptatem praesentium omnis distinctio. Sapiente, officia inventore reiciendis consectetur ullam molestias temporibus. Consequuntur veniam pariatur.</p>
                 <button class="btn mt-7 mb-5 bg-blue-600 text-white border-0">Read More</button>
             </div>
             <div class="col w-1/2" id="opt-img">
-                <img src="col.jpg" alt="" width="100%">
+                <img src="col.jpg" alt="" width="100%" class="rounded-xl">
             </div>
         </div>
     </div>
     <!-- choose your destination  -->
-    <div class="container p-5" id="cyd-cards">
+    <div class="container p-5 max-w-6xl" id="cyd-cards">
         <div class="container text-center p-3" id="cyd-card">
             <h1 class="Font-bold text-4xl p-4">Choose Your Destination</h1>
             <p class="p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia ad perspiciatis suscipit odit repellendus voluptatum placeat pariatur nesciunt amet repellat!</p>
@@ -204,5 +237,143 @@
             </div>
         </div>
     </div>
+    <!-- why choose us -->
+    <div class="container p-5 mb-5 max-w-6xl" id="wcu">
+        <div class="container text-center p-3">
+            <h1 class="Font-bold text-4xl p-4">Why Choose Us?</h1>
+            <p class="p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia ad perspiciatis suscipit odit repellendus voluptatum placeat pariatur nesciunt amet repellat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, assumenda distinctio hic enim maxime neque qui officia saepe doloremque explicabo?</p>
+        </div>
+        <div class="container flex lg:flex-row lg:space-x-6 space-x-0 space-y-6 lg:space-y-0 flex-col">
+            <div class="bg-red-100 rounded-xl">
+                <img src="5-stars.png" alt="" class="p-3">
+                <h1 class="text-3xl font-semibold p-3">Handipicked Hotels</h1>
+                <p class="p-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi voluptates totam inventore tenetur, quasi delectus reprehenderit nobis aut dolorem commodi perspiciatis laboriosam placeat blanditiis minus eum voluptatibus ipsa harum reiciendis.</p>
+            </div>
+            <div class="bg-cyan-100 rounded-xl">
+                <img src="map.png" alt="" class="p-3">
+                <h1 class="text-3xl font-semibold p-3">World Class Service</h1>
+                <p class="p-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi voluptates totam inventore tenetur, quasi delectus reprehenderit nobis aut dolorem commodi perspiciatis laboriosam placeat blanditiis minus eum voluptatibus ipsa harum reiciendis.</p>
+            </div>
+            <div class="bg-red-100 rounded-xl">
+                <img src="price-tag.png" alt="" class="p-3">
+                <h1 class="text-3xl font-semibold p-3">Best Price Guarantee</h1>
+                <p class="p-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi voluptates totam inventore tenetur, quasi delectus reprehenderit nobis aut dolorem commodi perspiciatis laboriosam placeat blanditiis minus eum voluptatibus ipsa harum reiciendis.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Deals & Discounts -->
+    <div class="container p-5 max-w-6xl" id="dd">
+        <div class="container">
+            <div class="container text-center p-3">
+                <h1 class="Font-bold text-4xl p-4">Deals & Discounts</h1>
+                <p class="p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia ad perspiciatis suscipit odit repellendus voluptatum placeat pariatur nesciunt amet repellat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, assumenda distinctio hic enim maxime neque qui officia saepe doloremque explicabo.</p>
+            </div>
+            <div class="container space-y-8">
+                <div class="card w-full h-96 shadow-xl image-full">
+                    <figure><img src="https://img.lovepik.com/photo/48013/0603.jpg_wh300.jpg" alt="Shoes" class="w-full bg-opacity-100" /></figure>
+                    <div class="card-body bg-white w-96 m-10 rounded-xl">
+                        <p class="text-black"><i class="fa-solid fa-clock text-orange-600"></i> 7 Days/6 Nights <i class="fa-solid fa-users-line text-orange-600"></i> Max: 10 <i class="fa-solid fa-location-dot text-orange-600"></i> Malaysia</p>
+                        <h2 class="card-title text-black">Tour To Satorini</h2>
+                        <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos officia similique et optio cumque impedit inventore deserunt aut aspernatur dolorem.</p>
+                        <h2 class="card-title text-orange-600">Price: $1300-$1500</h2>
+                        <div class="card-actions justify-end">
+                          <button class="btn bg-orange-600 text-white hover:bg-orange-400">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full h-96 shadow-xl image-full">
+                    <figure><img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg" alt="Shoes" class="w-full bg-opacity-100" /></figure>
+                    <div class="card-body bg-white w-96 m-10 justify-self-end rounded-xl">
+                        <p class="text-black"><i class="fa-solid fa-clock text-orange-600"></i> 7 Days/6 Nights <i class="fa-solid fa-users-line text-orange-600"></i> Max: 10 <i class="fa-solid fa-location-dot text-orange-600"></i> Malaysia</p>
+                        <h2 class="card-title text-black">Tour To Satorini</h2>
+                        <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos officia similique et optio cumque impedit inventore deserunt aut aspernatur dolorem.</p>
+                        <h2 class="card-title text-orange-600">Price: $1300-$1500</h2>
+                        <div class="card-actions justify-end">
+                          <button class="btn bg-orange-600 text-white hover:bg-orange-400">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full h-96 shadow-xl image-full">
+                    <figure><img src="https://blog.depositphotos.com/wp-content/uploads/2017/07/Soothing-nature-backgrounds-2.jpg.webp" alt="Shoes" class="w-full bg-opacity-100" /></figure>
+                    <div class="card-body bg-white w-96 m-10 rounded-xl">
+                        <p class="text-black"><i class="fa-solid fa-clock text-orange-600"></i> 7 Days/6 Nights <i class="fa-solid fa-users-line text-orange-600"></i> Max: 10 <i class="fa-solid fa-location-dot text-orange-600"></i> Malaysia</p>
+                        <h2 class="card-title text-black">Tour To Satorini</h2>
+                        <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos officia similique et optio cumque impedit inventore deserunt aut aspernatur dolorem.</p>
+                        <h2 class="card-title text-orange-600">Price: $1300-$1500</h2>
+                        <div class="card-actions justify-end">
+                          <button class="btn bg-orange-600 text-white hover:bg-orange-400">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-10 text-center">
+                <button class="btn bg-orange-600 ps-5 pe-5 text-white hover:bg-orange-400 text-xl">See All Packages</button>
+            </div>
+        </div>
+    </div>
+    <!-- video  -->
+    <div class="container p-5 max-w-6xl flex lg:flex-row flex-col lg:space-x-6 space-x-0 space-y-6 lg:space-y-0" id="video">
+        <div class="container p-3 w-50%">
+            <p class="Font-bold text-4xl p-4">A Simple Perfect Place To Get Lost</p>
+            <p class="ps-3 p-2">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. bero commodo sagittis dignissim adipiscing quis.</p>
+            <ul class="list-disc ps-10">
+                <li>Adiúiscing ornare úellentesque mauris voúlatea úorta lacus. Lectus susúendisse nullam.</li> 
+                <li>Adiúiscing ornare úellentesque mauris voúlatea úorta lacus. Lectus susúendisse nullam.</li>
+            </ul>
+            <div class="p-10">
+                <button class="btn bg-orange-600 ps-5 pe-5 text-white hover:bg-orange-400 text-xl">See More</button>
+            </div>
+        </div>
+        <div class="container" id="video-2">
+            <iframe  class="rounded-xl w-full h-full" src="https://www.youtube.com/embed/LXb3EKWsInQ?si=G9zIdyT8kUSxr7BL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <!-- form  -->
+    <div class="container p-5 max-w-6xl flex lg:flex-row flex-col lg:space-x-6 space-x-0 space-y-6 lg:space-y-0" id="form">
+        <div class="container p-3 w-50% border-2 border-orange-600 rounded-xl">
+            <p class="font-semibold text-2xl p-2">Newsletter</p>
+            <p class="p-1 text-slate-400">Get your daily dose of travel news & tips. Sign 
+                up today!</p>
+            <hr>
+            <form class="flex flex-col space-y-6 pt-6">
+                <div class="">
+                    <input type="text" class="input input-bordered" placeholder="Enter your name">
+                </div>
+                <div class="">
+                    <input type="email" class="input input-bordered" placeholder="Enter your E-mail">
+                </div>
+                <div class="">
+                    <button class="btn bg-orange-600 ps-5 pe-5 text-white hover:bg-orange-400 text-xl">Subscribe</button>
+                </div>
+            </form>
+        </div>
+        <div class="container w-50% relative">
+            <img src="https://live.staticflickr.com/2941/15208439620_aea6898c9f_b.jpg" alt="" class="w-full rounded-xl">
+            <div class="bg-orange-600 absolute pt-3 pb-3 pe-8 ps-8 text-white bottom-16 start-0 rotate-45">
+                <p>Travel.com</p>
+                <p>Save up to 70%</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer  -->
+    <footer class="footer max-w-6xl footer-center p-10 bg-slate-200 text-primary-content">
+        <aside>
+            <div class="text-black">
+                <a href="#" class="text-3xl hover:bg-blue-50 rounded-md"><i class="fa-solid fa-earth-asia text-blue-600"></i> Hero <span class="text-blue-600">Travel</span></a>
+            </div>
+            <p class="text-slate-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error dolorem iusto adipisci ad commodi harum officiis odio fuga.</p> 
+        </aside> 
+        <nav class="divide-y divide-black">
+            <div class="grid grid-flow-col gap-4 text-black">
+                <a href="#"><i class="fa-brands fa-facebook text-4xl"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter text-4xl"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram text-4xl"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube text-4xl"></i></a>
+            </div>
+        </nav>
+        <div class="">
+            <p class="text-black">Copyright © 2024 - All right reserved</p>
+        </div>
+      </footer>
 </body>
 </html>
